@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulaciones - Ciberseguridad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6bd1d4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #0e1e52;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="basics.html">Conceptos Básicos</a></li>
+            <li><a href="best-practices.html">Prácticas Recomendadas</a></li>
+            <li><a href="interactive.html">Simulaciones</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Simulaciones y Cuestionarios</h1>
+        <form id="quiz-form">
+            <fieldset>
+                <legend>Pregunta 1</legend>
+                <label>¿Qué es un phishing?</label><br>
+                <input type="radio" name="question1" value="A"> A. Un tipo de virus<br>
+                <input type="radio" name="question1" value="B"> B. Un intento de obtener información sensible<br>
+                <input type="radio" name="question1" value="C"> C. Un software antivirus<br>
+            </fieldset>
+            <fieldset>
+                <legend>Pregunta 2</legend>
+                <label>¿Qué es un firewall?</label><br>
+                <input type="radio" name="question2" value="A"> A. Un dispositivo de red que filtra tráfico<br>
+                <input type="radio" name="question2" value="B"> B. Un tipo de malware<br>
+                <input type="radio" name="question2" value="C"> C. Un software de cifrado<br>
+            </fieldset>
+            <button type="button" onclick="checkAnswers()">Enviar</button>
+        </form>
+        <p id="feedback"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ciberseguridad Educativa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
